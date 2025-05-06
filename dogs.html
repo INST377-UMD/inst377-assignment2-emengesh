@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activities - Dogs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Simple Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/css/simple-slider.min.css">
+    <style>
+        /* Dog Page Specific Styles */
+        .carousel-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel {
+            height: 500px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .breed-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .breed-button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .breed-button:hover {
+            background-color: #45a049;
+        }
+
+        .breed-info-container {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .breed-info-container h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .breed-info-container p {
+            line-height: 1.6;
+        }
+
+        .breed-info-container .life-span {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .breed-info-container .life-span div {
+            background-color: #e9f7ef;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dog Gallery</h1>
+        
+        <!-- Dog Carousel -->
+        <div class="carousel-container">
+            <div id="dog-carousel" class="carousel"></div>
+        </div>
+        
+        <!-- Breed Buttons Container -->
+        <div class="breed-buttons" id="breed-buttons">
+            <!-- Buttons will be dynamically added here -->
+        </div>
+        
+        <!-- Breed Information Container -->
+        <div id="breed-info" class="breed-info-container">
+            <!-- Breed info will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Audio Instructions Div -->
+    <div class="audio-instructions">
+        <h2>Voice Commands</h2>
+        <p><strong>Available commands:</strong></p>
+        <ul>
+            <li>"Hello" - Alerts with Hello World</li>
+            <li>"Change the color to [color]" - Changes background color</li>
+            <li>"Navigate to [page]" - Navigate to specified page</li>
+            <li>"Load Dog Breed [breed name]" - Displays information about the specified breed</li>
+        </ul>
+        <div class="audio-controls">
+            <button id="turn-on-audio">Turn On Audio</button>
+            <button id="turn-off-audio">Turn Off Audio</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/js/simple-slider.min.js"></script>
+    <script src="dogs.js"></script>
+</body>
+</html>
