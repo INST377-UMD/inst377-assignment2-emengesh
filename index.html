@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activities - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Class Activities Home</h1>
+        
+        <div class="quote-container">
+            <blockquote id="quote"></blockquote>
+            <p id="author"></p>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="stocks.html"><button class="button-3" role="button">Stocks</button></a>
+            <a href="dogs.html"><button class="button-3" role="button">Dogs</button></a>
+        </div>
+    </main>
+
+    <div class="audio-instructions">
+        <h2>Audio Navigation Instructions</h2>
+        <p>You can use the following voice commands to navigate this website:</p>
+        <ul>
+            <li>"Hello" - Alerts with Hello World</li>
+            <li>"Change the color to [color]" - Changes the background color of the page</li>
+            <li>"Navigate to [page]" - Navigates to the specified page (Home, Stocks, or Dogs)</li>
+        </ul>
+        <div class="audio-controls">
+            <button id="turnOnAudio" class="button-3">Turn On Audio</button>
+            <button id="turnOffAudio" class="button-3">Turn Off Audio</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
